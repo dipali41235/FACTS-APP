@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Random Fact App</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Facts App</title>
+    
 </head>
 <body>
-  <div class="card">
-    <h1>Random Fact</h1>
-    <p id="fact-text">Loading...</p>
-    <button id="fact-btn">Get Another Fact</button>
-  </div>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Amazing Facts</h1>
+            <p class="subtitle">Discover fascinating facts from around the world!</p>
+        </div>
 
-  <script src="script.js"></script>
+        <div class="controls">
+            <button class="btn" id="fetchBtn">Get New Fact</button>
+            <button class="btn" id="fetchMultipleBtn">Get 5 Facts</button>
+            <button class="btn" id="clearBtn">Clear All</button>
+        </div>
+
+        <div id="factsContainer">
+            <div class="fact-card">
+                <div class="fact-text">Click "Get New Fact" to discover amazing facts!</div>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number" id="factCount">0</div>
+                <div class="stat-label">Facts Loaded</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalChars">0</div>
+                <div class="stat-label">Characters Read</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="avgLength">0</div>
+                <div class="stat-label">Avg Length</div>
+            </div>
+        </div>
+    </div>
+
+  
 </body>
 </html>
